@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src",
+    "target": "es6",
     "lib": [
+      "es2017",
       "dom",
       "dom.iterable",
       "esnext"
@@ -18,9 +20,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "typeRoots": [
+    "node_modules/@types"
+  ],
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
