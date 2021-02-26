@@ -9,7 +9,6 @@ ReactDOM.render(
   <React.StrictMode>
     <GlobalStyles />
     <Routes />
-    <h1>OI</h1>
   </React.StrictMode>,
   document.getElementById('root')
 )
