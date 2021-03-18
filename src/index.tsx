@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom'
 import reportWebVitals from './reportWebVitals'
 
 import Routes from './routes'
+import { ThemeProvider } from 'styled-components'
+import theme from 'styles/theme'
 import GlobalStyles from 'styles/global'
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyles />
-    <Routes />
+    <ThemeProvider theme={theme}>
+      <Routes />
+      <GlobalStyles />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )

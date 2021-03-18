@@ -20,7 +20,7 @@ module.exports = function (plop) {
     actions: (data) => {
       const actions = []
       switch (data.type) {
-        case 'teste':
+        case 'test':
           actions.push({
             type: 'add',
             path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.tsx',
@@ -34,7 +34,7 @@ module.exports = function (plop) {
             templateFile: 'templates/stories.tsx.hbs'
           })
           break
-        case 'estilo':
+        case 'style':
           actions.push({
             type: 'add',
             path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.style.ts',
